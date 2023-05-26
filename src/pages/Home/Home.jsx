@@ -1,10 +1,14 @@
 import React from "react";
 import Header from "../../components/Header/Header";
+import Banner from "../../components/Banner/Banner";
 
 const Home = () => {
   return (
     <>
-      <Header />
+      <div className="bg-[#E5F4FC]">
+        <Header />
+        <Banner />
+      </div>
     </>
   );
 };

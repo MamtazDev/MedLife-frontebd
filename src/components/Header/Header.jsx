@@ -4,7 +4,7 @@ import "./Header.css";
 
 const Header = () => {
   return (
-    <div className="navbar bg-base-100 container mx-auto mt-[50px]">
+    <div className="navbar bg-[#E5F4FC] container mx-auto pt-[50px]">
       <div className="flex-1">
         <a className="btn btn-ghost normal-case text-xl hover:bg-inherit">
           <img src={logo} alt="" />

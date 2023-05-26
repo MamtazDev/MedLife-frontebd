@@ -1,0 +1,21 @@
+.select {
+  background-image: url("../../assets/icons/dropdownBtn.png") !important;
+  background-size: 10px 7px, 20px 20px !important;
+}
+
+.select-ghost:focus {
+  color: #a3a4a3 !important;
+}
+
+.select:focus {
+  outline-offset: unset !important;
+  outline: unset !important;
+}
+
+.banner {
+  background-image: url("../../assets/images/circle.png"),
+    url("../../assets/images/grid-top.png"),
+    url("../../assets/images/grid-bottom.png");
+  background-repeat: no-repeat, no-repeat, no-repeat;
+  background-position: right 15% bottom 10%, right top 18%, bottom;
+}
