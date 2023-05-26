@@ -1,0 +1,31 @@
+.read-more-btn {
+  border-radius: 45px !important;
+}
+
+.navitem {
+  position: relative;
+}
+
+/* .navitem:hover {
+  background-color: unset;
+} */
+
+.navitem::after {
+  content: "";
+  display: block;
+  position: absolute;
+  width: 50%;
+  height: 0.175rem;
+  background: #00b3ad;
+  top: 50px;
+  left: 20px;
+}
+
+.navitem::after {
+  transform: scale(0, 1);
+  transition: transform 0.3s ease;
+}
+
+.navitem:hover::after {
+  transform: scale(1, 1);
+}
