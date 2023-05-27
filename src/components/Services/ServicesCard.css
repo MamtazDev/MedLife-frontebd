@@ -1,0 +1,8 @@
+.services:hover img {
+  background-color: white;
+}
+
+.services:hover h3,
+.services:hover p {
+  color: white !important;
+}
