@@ -3,6 +3,7 @@ import "./App.css";
 import Home from "./pages/Home/Home";
 import Services from "./pages/Services/Services";
 import AboutUs from "./pages/AboutUs/AboutUs";
+import Team from "./pages/Team/Team";
 
 function App() {
   const [count, setCount] = useState(0);
@@ -12,6 +13,7 @@ function App() {
       <Home />
       <Services />
       <AboutUs />
+      <Team />
     </>
   );
 }
