@@ -1,0 +1,6 @@
+.video-frame {
+  background-image: url("../../assets/images/blueRectangle.png"),
+    url("../../assets/images/brownRectangle.png");
+  background-repeat: no-repeat, no-repeat;
+  background-position: left top, right 6% bottom;
+}
