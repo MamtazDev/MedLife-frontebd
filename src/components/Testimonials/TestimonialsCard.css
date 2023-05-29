@@ -1,0 +1,9 @@
+.testimonial-box {
+  background-image: url("../../assets/images/frame.png");
+  padding: 20px;
+  background-repeat: no-repeat;
+  background-size: contain;
+  background-position: right;
+
+  margin: 0 auto;
+}
