@@ -5,6 +5,8 @@ import Services from "./pages/Services/Services";
 import AboutUs from "./pages/AboutUs/AboutUs";
 import Team from "./pages/Team/Team";
 import Testimonials from "./pages/Testimonials/Testimonials";
+import FAQ from "./pages/FAQ/FAQ";
+import Appoinment from "./pages/Appoinment/Appoinment";
 
 function App() {
   const [count, setCount] = useState(0);
@@ -16,6 +18,8 @@ function App() {
       <AboutUs />
       <Team />
       <Testimonials />
+      <FAQ />
+      <Appoinment />
     </>
   );
 }
