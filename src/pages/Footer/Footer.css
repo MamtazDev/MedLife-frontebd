@@ -1,0 +1,12 @@
+.footer-box {
+  background: linear-gradient(90deg, #08172e 0%, #04335c 100%);
+}
+.footer-box .footer_bg {
+  background-image: url("../../assets/images/dna.png");
+  background-repeat: no-repeat;
+  background-position: right;
+  background-size: contain;
+}
+.hr {
+  border-bottom: 1px solid #202f42;
+}

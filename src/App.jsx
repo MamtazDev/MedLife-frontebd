@@ -7,6 +7,7 @@ import Team from "./pages/Team/Team";
 import Testimonials from "./pages/Testimonials/Testimonials";
 import FAQ from "./pages/FAQ/FAQ";
 import Appoinment from "./pages/Appoinment/Appoinment";
+import Footer from "./pages/Footer/Footer";
 
 function App() {
   const [count, setCount] = useState(0);
@@ -20,6 +21,7 @@ function App() {
       <Testimonials />
       <FAQ />
       <Appoinment />
+      <Footer />
     </>
   );
 }
