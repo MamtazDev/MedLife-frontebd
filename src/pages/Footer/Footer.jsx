@@ -15,7 +15,7 @@ const Footer = () => {
       <div className="footer_bg">
         <div className="container mx-auto pt-[132px] pb-[109px]">
           <div className="flex justify-between">
-            <div className="flex gap-[20px]">
+            <div className="flex gap-[20px] items-center">
               <img src={mail} alt="" />
               <p className="font-[600] text-[20px] text-white items-center">
                 Subscribe to get latest news
@@ -78,7 +78,7 @@ const Footer = () => {
                     </p>
                   </div>
                 </div>
-                <div>
+                <div className="flex flex-col gap-[25px]">
                   <div className="flex items-center gap-[8px]">
                     <img src={arrow} alt="" />
                     <p className="font-[400] text-[16px] text-[#9CB4BB]">
@@ -98,7 +98,29 @@ const Footer = () => {
                 </div>
               </div>
             </div>
-            <div></div>
+            <div>
+              <h6 className="font-[600] text-[20px] text-white mb-[30px]">
+                Clinic Hours
+              </h6>
+              <div>
+                <div className="flex justify-between font-[400] text-[16px] text-[#9CB4BB] pb-[15px] border-b border-[#9CB4BB]">
+                  <p>Mon- Thus-</p>
+                  <p>9.00AM-7.00PM</p>
+                </div>
+                <div className="flex justify-between font-[400] text-[16px] text-[#9CB4BB] py-[15px] border-b border-[#9CB4BB]">
+                  <p>Friday-</p>
+                  <p>9.00AM-7.00PM</p>
+                </div>
+                <div className="flex justify-between font-[400] text-[16px] text-[#9CB4BB] py-[15px] border-b border-[#9CB4BB]">
+                  <p>Saturday-</p>
+                  <p>9.00AM-7.00PM</p>
+                </div>
+                <div className="flex justify-between font-[400] text-[16px] text-[#9CB4BB] pt-[15px]">
+                  <p>Sunday-</p>
+                  <p>9.00AM-7.00PM</p>
+                </div>
+              </div>
+            </div>
           </div>
         </div>
       </div>
