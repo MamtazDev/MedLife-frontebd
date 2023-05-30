@@ -6,12 +6,12 @@ import "./AboutUs.css";
 
 const AboutUs = () => {
   return (
-    <section className="container mx-auto mb-[150px]">
-      <div className="flex mb-[35px]">
-        <div className="w-1/2 flex justify-center items-center h-[455px] video-frame">
+    <section className="container custom-container  mx-auto mb-[150px]">
+      <div className="flex flex-col lg:flex-row aboutus_container mb-[35px]">
+        <div className="w-full lg:w-1/2 flex justify-center items-center h-[455px] video-frame">
           <img src={videoFrame} alt="" className="w-[600px] h-[384px]" />
         </div>
-        <div className="w-1/2 flex justify-center items-center h-[455px]">
+        <div className="w-full lg:w-1/2 px-[20px] lg:px-0 flex justify-center items-center h-[455px]">
           <div>
             <p className="font-[500] text-[20px] text-[#00B3AD]">About Us</p>
             <h3 className="font-[600] text-[40px] text-[#20226A]">Our Story</h3>
@@ -31,7 +31,7 @@ const AboutUs = () => {
           </div>
         </div>
       </div>
-      <div className="max-w-[1213px] mx-auto flex py-[40px] px-[50px] justify-between bg-[#f1f7fb] rounded-[25px]">
+      <div className="max-w-[1213px] mx-auto grid grid-cols-2 lg:grid-cols-4 py-[40px] px-[50px] justify-between bg-[#f1f7fb] rounded-[25px]">
         <div>
           <h1 className="font-[500] text-[64px] text-[#20226A]">
             200<span className="text-[#00B3AD]">+</span>

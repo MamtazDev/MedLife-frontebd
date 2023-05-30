@@ -9,6 +9,7 @@ import pen from "../../assets/icons/pen.png";
 import bottle from "../../assets/icons/bottole.png";
 import hand from "../../assets/icons/hand.png";
 import heart from "../../assets/icons/heart.png";
+import "./Services.css";
 
 const specialist = [
   {
@@ -63,7 +64,7 @@ const specialist = [
 
 const Services = () => {
   return (
-    <section className="container mx-auto mt-[146px] mb-[150px]">
+    <section className="container custom-container mx-auto mt-[146px] mb-[150px] px-[20px] lg:px-0">
       <h4 className="font-[500] text-[#00B3AD] text-[20px]">Our Services</h4>
       <h3 className="mb-[70px] font-[600] text-[#20226A] text-[40px]">
         Our Consulting Specialist
@@ -72,7 +73,7 @@ const Services = () => {
         View all{" "}
         <img src={rightArrow} alt="" className="inline h-[20px] w-[20px]" />
       </p>
-      <div className="grid grid-cols-4 gap-[30px]">
+      <div className="grid grid-cols-1 md:grid-cols-2 lg:grid-cols-4 gap-[30px]">
         {specialist.map((item, idx) => (
           <ServicesCard item={item} />
         ))}

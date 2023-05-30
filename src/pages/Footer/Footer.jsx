@@ -13,8 +13,8 @@ const Footer = () => {
   return (
     <section className="footer-box">
       <div className="footer_bg">
-        <div className="container mx-auto pt-[132px] pb-[109px]">
-          <div className="flex justify-between">
+        <div className="container custom-container mx-auto pt-[132px] pb-[109px]">
+          <div className="flex flex-col lg:flex-row items-center gap-5 lg:gap-0 lg:justify-between">
             <div className="flex gap-[20px] items-center">
               <img src={mail} alt="" />
               <p className="font-[600] text-[20px] text-white items-center">
@@ -25,14 +25,14 @@ const Footer = () => {
               <input
                 type="email"
                 placeholder="Your Email Address"
-                className="px-[30px] w-[513px] bg-[#001E3A] rounded-l-[3px]"
+                className="px-[30px] w-[513px] bg-[#001E3A] rounded-l-[3px] text-white"
               />
               <img src={sendButton} alt="" className="rounded-r-[3px] " />
             </div>
           </div>
           {/* <hr className="mt-[50px] " /> */}
           <p className="hr my-[50px]"></p>
-          <div className="grid grid-cols-3 gap-[65px]">
+          <div className="grid lg:grid-cols-3 gap-[65px] px-[20px] lg:px-0">
             <div>
               <img src={logo} alt="" />
               <p className="font-[400] text-[400] text-[#9CB4BB] my-[20px]">

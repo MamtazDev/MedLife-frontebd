@@ -30,7 +30,7 @@ const Testimonials = () => {
       </h3>
 
       <div className="frame-box max-w-[1048px] mx-auto p-[50px]">
-        <div className="testi__swiper  w-[998px] mx-auto  bg-white ">
+        <div className="testi__swiper w-full mx-auto  bg-white ">
           <Swiper
             // install Swiper modules
             modules={[Mousewheel, Pagination, Navigation]}

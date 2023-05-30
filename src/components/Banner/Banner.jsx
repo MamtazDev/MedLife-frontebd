@@ -11,7 +11,7 @@ const Banner = () => {
   // console.log(findDoctor, "doctorsss");
   return (
     <section className="banner relative">
-      <div className="container mx-auto mb-[131px] pt-5">
+      <div className="container mx-auto mb-[131px] pt-5 custom-container px-[25px] lg:px-0">
         <div className="max-w-[756px]">
           <h1 className="mt-[138px] font-[600] text-[64px] text-[#20226A]">
             <span>Find And Search</span> <br />
@@ -19,7 +19,7 @@ const Banner = () => {
               Your <span className="text-[#1379B1]">Favorite Doctor's</span>
             </span>
           </h1>
-          <p className="font-[400] text-[16px] text-[#656765] max-w-[68ch] mt-[20px]">
+          <p className="font-[400] text-[16px] text-[#656765] max-w-[68ch] mt-[20px] banner-text">
             Massa interdum sit lacus dolor ac mattis nunc pellentesque ipsum,
             sit interdum aenean risus quam consequat dolor convallis urna,
             dictum in sed arcu .
@@ -59,17 +59,17 @@ const Banner = () => {
       </div>
 
       {/* online support start */}
-      <div className="bg-[#1379B1]">
-        <div className="container mx-auto flex py-[40px]">
-          <div className="pr-[70px]">
+      <div className="bg-[#1379B1] online-support">
+        <div className="container mx-auto flex py-[40px] online-support-container">
+          <div className="pl-[70px] pr-[70px] online-support-content1">
             <h3 className="font-[600] text-[40px] text-white">24/7</h3>
             <p className="font-[400] text-[20px] text-white">Online Support</p>
           </div>
-          <div className="px-[70px] border-x">
+          <div className="px-[70px] border-x online-support-content2">
             <h3 className="font-[600] text-[40px] text-white">100+</h3>
             <p className="font-[400] text-[20px] text-white">Doctor Online</p>
           </div>
-          <div className="px-[70px]">
+          <div className="px-[70px] online-support-content3">
             <h3 className="font-[600] text-[40px] text-white">1M+</h3>
             <p className="font-[400] text-[20px] text-white">Customer Active</p>
           </div>
@@ -80,17 +80,17 @@ const Banner = () => {
       <img
         src={girlDoctor}
         alt=""
-        className="absolute bottom-0 right-[317px]"
+        className="absolute bottom-0 right-[317px] banner-doctor hidden lg:block"
       />
       <img
         src={bigStar}
         alt=""
-        className="absolute top-[157px] right-[716px]"
+        className="absolute top-[157px] right-[716px] hidden lg:block"
       />
       <img
         src={smallStar}
         alt=""
-        className="absolute top-[586px] left-[806px]"
+        className="absolute top-[586px] left-[806px] hidden lg:block"
       />
     </section>
   );

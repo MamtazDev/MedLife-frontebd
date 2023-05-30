@@ -4,3 +4,12 @@
   background-repeat: no-repeat, no-repeat;
   background-position: left top, right 6% bottom;
 }
+
+@media only screen and (width: 1024px) {
+  .aboutus_container {
+    gap: 20px;
+  }
+  .custom-container {
+    max-width: 900px !important;
+  }
+}

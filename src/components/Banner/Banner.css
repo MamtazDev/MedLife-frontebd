@@ -19,3 +19,43 @@
   background-repeat: no-repeat, no-repeat, no-repeat;
   background-position: right 15% bottom 10%, right top 18%, bottom;
 }
+
+@media only screen and (width: 1440px) {
+  .banner-doctor {
+    position: absolute;
+    right: 12px !important;
+  }
+}
+@media only screen and (width: 1024px) {
+  .banner h1 {
+    font-size: 42px;
+  }
+  .banner-text {
+    font-size: 12px !important;
+  }
+  .banner-doctor {
+    width: 460px;
+    position: absolute;
+    right: 12px !important;
+  }
+  .online-support h3 {
+    font-size: 20px !important;
+  }
+  .online-support p {
+    font-size: 16px !important;
+  }
+  .online-support-content1 {
+    padding-right: 40px !important;
+  }
+  .online-support-content2 {
+    padding-right: 40px !important;
+    padding-left: 40px !important;
+  }
+  .online-support-content3 {
+    padding-right: 40px !important;
+    padding-left: 40px !important;
+  }
+  .custom-container {
+    max-width: 900px !important;
+  }
+}

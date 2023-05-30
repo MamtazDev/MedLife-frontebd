@@ -10,7 +10,8 @@ const Header = () => {
           <img src={logo} alt="" />
         </a>
       </div>
-      <div className="flex-none">
+      {/* <Menubar /> */}
+      <div className="flex-none hidden lg:block">
         <ul className="menu menu-horizontal px-1 flex gap-[2rem]">
           <li className="navitem">
             <a className="font-[500] text-[20px] text-[#20226A] hover:bg-inherit hover:text-[#00b3ad]">
