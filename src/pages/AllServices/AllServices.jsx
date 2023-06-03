@@ -1,5 +1,6 @@
 import React from "react";
-import rightArrow from "../../assets/icons/right-arrow.png";
+import { Link, useParams } from "react-router-dom";
+import Services from "../Services/Services";
 import ServicesCard from "../../components/Services/ServicesCard";
 import siring from "../../assets/icons/siringe.png";
 import lung from "../../assets/icons/lung.png";
@@ -9,8 +10,6 @@ import pen from "../../assets/icons/pen.png";
 import bottle from "../../assets/icons/bottole.png";
 import hand from "../../assets/icons/hand.png";
 import heart from "../../assets/icons/heart.png";
-import "./Services.css";
-import { Link } from "react-router-dom";
 
 const specialist = [
   {
@@ -61,21 +60,35 @@ const specialist = [
     content:
       "Eleifend enim, natoque bulum, nibh dui mi adipiscing dui ndum ultrices tincidunt",
   },
+  {
+    image: heart,
+    title: "Heart Diseases",
+    content:
+      "Eleifend enim, natoque bulum, nibh dui mi adipiscing dui ndum ultrices tincidunt",
+  },
+  {
+    image: heart,
+    title: "Heart Diseases",
+    content:
+      "Eleifend enim, natoque bulum, nibh dui mi adipiscing dui ndum ultrices tincidunt",
+  },
+  {
+    image: heart,
+    title: "Heart Diseases",
+    content:
+      "Eleifend enim, natoque bulum, nibh dui mi adipiscing dui ndum ultrices tincidunt",
+  },
+  {
+    image: heart,
+    title: "Heart Diseases",
+    content:
+      "Eleifend enim, natoque bulum, nibh dui mi adipiscing dui ndum ultrices tincidunt",
+  },
 ];
 
-const Services = () => {
+const AllServices = () => {
   return (
-    <section className="container custom-container mx-auto mt-[146px] mb-[150px] px-[20px] lg:px-0">
-      <h4 className="font-[500] text-[#00B3AD] text-[20px]">Our Services</h4>
-      <h3 className="mb-[70px] font-[600] text-[#20226A] text-[40px]">
-        Our Consulting Specialist
-      </h3>
-      <p className="font-[400] text-[16px] text-[#00B3AD] text-end mb-[30px] cursor-pointer">
-        <Link to="/services">
-          View all{" "}
-          <img src={rightArrow} alt="" className="inline h-[20px] w-[20px]" />
-        </Link>
-      </p>
+    <section>
       <div className="grid grid-cols-1 md:grid-cols-2 lg:grid-cols-4 gap-[30px]">
         {specialist.map((item, idx) => (
           <Link to={`/services/${item?.title}`}>
@@ -87,4 +100,4 @@ const Services = () => {
   );
 };
 
-export default Services;
+export default AllServices;

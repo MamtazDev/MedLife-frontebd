@@ -7,12 +7,12 @@ import "./TestimonialsCard.css";
 const TestimonialsCard = () => {
   return (
     <div className="flex testimonial-box justify-between">
-      <div className="w-1/2">
-        <h3 className="font-[600] text-[36px] text-[#20226A] mb-[30px]">
+      <div className="lg:w-1/2">
+        <h3 className="font-[600] text-xl lg:text-[36px] text-[#20226A] mb-[30px]">
           Inventore vel alias tel consequatur nihil vel maiores voluptate enim
           ea deleniti.
         </h3>
-        <div className="flex items-center gap-2">
+        <div className="flex items-center gap-2 mb-[40px]">
           <img src={icon} alt="" />
           <div>
             <h6 className="font-[700] text-[18px] text-[#00B3AD]">
@@ -24,7 +24,7 @@ const TestimonialsCard = () => {
           </div>
         </div>
       </div>
-      <div className="w-1/2">
+      <div className="w-1/2 hidden lg:block">
         <img src={sliderDoctor} alt="" className="ml-auto" />
       </div>
     </div>

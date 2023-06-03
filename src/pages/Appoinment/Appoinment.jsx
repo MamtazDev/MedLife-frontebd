@@ -3,10 +3,10 @@ import "./Appoinment.css";
 
 const Appoinment = () => {
   return (
-    <section className="appoinment-box my-[150px] grid lg:grid-cols-2 container mx-auto">
+    <section className="appoinment-box my-[150px] grid grid-cols-1 lg:grid-cols-2 container mx-auto">
       <div></div>
       <div>
-        <form className=" -mb-[18px] w-full px-[89px] py-[40px] bg-[#1379B1]">
+        <form className=" -mb-[18px] w-full px-5 lg:px-[89px] py-[40px] bg-[#1379B1]">
           <h3 className="font-[400] text-[40px] text-white text-center mb-[20px]">
             Book An Appoinment
           </h3>
@@ -20,15 +20,15 @@ const Appoinment = () => {
             placeholder="Email Address"
             className="w-full h-[54px] px-[30px] rounded-[5px] mb-[20px]"
           />
-          <div className="w-full flex justify-between">
+          <div className="w-full flex justify-between gap-2 lg:gap-[42px]">
             <input
               type="date"
-              className="h-[54px] px-[30px] rounded-[5px] mb-[20px] date-input"
+              className="w-full h-[54px] px-[30px] rounded-[5px] mb-[20px] date-input"
             />
             <input
               type="text"
               placeholder="Time"
-              className="h-[54px] px-[30px] rounded-[5px] mb-[20px] time-input"
+              className="w-full h-[54px] px-[30px] rounded-[5px] mb-[20px] time-input"
             />
           </div>
           <textarea

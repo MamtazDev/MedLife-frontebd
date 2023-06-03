@@ -31,7 +31,7 @@ const AboutUs = () => {
           </div>
         </div>
       </div>
-      <div className="max-w-[1213px] mx-auto grid grid-cols-2 lg:grid-cols-4 py-[40px] px-[50px] justify-between bg-[#f1f7fb] rounded-[25px]">
+      <div className="max-w-[1213px] mx-auto grid grid-cols-1 md:grid-cols-2 lg:grid-cols-4 py-[40px] px-[50px] justify-between bg-[#f1f7fb] rounded-[25px]">
         <div>
           <h1 className="font-[500] text-[64px] text-[#20226A]">
             200<span className="text-[#00B3AD]">+</span>

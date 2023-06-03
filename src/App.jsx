@@ -8,20 +8,15 @@ import Testimonials from "./pages/Testimonials/Testimonials";
 import FAQ from "./pages/FAQ/FAQ";
 import Appoinment from "./pages/Appoinment/Appoinment";
 import Footer from "./pages/Footer/Footer";
+import { RouterProvider } from "react-router-dom";
+import { router } from "./Routes/Routes";
 
 function App() {
   const [count, setCount] = useState(0);
 
   return (
     <>
-      <Home />
-      <Services />
-      <AboutUs />
-      <Team />
-      <Testimonials />
-      {/* <FAQ /> */}
-      <Appoinment />
-      <Footer />
+      <RouterProvider router={router}></RouterProvider>
     </>
   );
 }

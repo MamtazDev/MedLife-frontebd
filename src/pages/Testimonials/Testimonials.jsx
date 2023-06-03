@@ -29,7 +29,7 @@ const Testimonials = () => {
         What Clients Say
       </h3>
 
-      <div className="frame-box max-w-[1048px] mx-auto p-[50px]">
+      <div className="frame-box max-w-[1048px] mx-auto p-5 lg:p-[50px]">
         <div className="testi__swiper w-full mx-auto  bg-white ">
           <Swiper
             // install Swiper modules

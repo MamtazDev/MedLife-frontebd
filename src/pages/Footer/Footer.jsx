@@ -25,7 +25,7 @@ const Footer = () => {
               <input
                 type="email"
                 placeholder="Your Email Address"
-                className="px-[30px] w-[513px] bg-[#001E3A] rounded-l-[3px] text-white"
+                className="px-[30px] max-w-[513px] bg-[#001E3A] rounded-l-[3px] text-white"
               />
               <img src={sendButton} alt="" className="rounded-r-[3px] " />
             </div>

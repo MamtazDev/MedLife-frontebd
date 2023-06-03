@@ -25,7 +25,7 @@ const Banner = () => {
             dictum in sed arcu .
           </p>
 
-          <div className="flex mt-[60px] p-[11px] bg-white rounded-[8px] max-w-[550px] justify-between">
+          <div className="flex flex-col lg:flex-row mt-[60px] p-[11px] bg-white rounded-[8px] max-w-[550px] justify-between items-center">
             {/* find doctor */}
             <div className="flex gap-[5px] items-center ml-[30px]">
               <img src={doctor} alt="" className="w-[24px] h-[24px]" />
@@ -61,16 +61,22 @@ const Banner = () => {
       {/* online support start */}
       <div className="bg-[#1379B1] online-support">
         <div className="container mx-auto flex py-[40px] online-support-container">
-          <div className="pl-[70px] pr-[70px] online-support-content1">
-            <h3 className="font-[600] text-[40px] text-white">24/7</h3>
+          <div className="px-4 lg:px-[70px]  online-support-content1">
+            <h3 className="font-[600] text-xl lg:text-[40px] text-white">
+              24/7
+            </h3>
             <p className="font-[400] text-[20px] text-white">Online Support</p>
           </div>
-          <div className="px-[70px] border-x online-support-content2">
-            <h3 className="font-[600] text-[40px] text-white">100+</h3>
+          <div className="px-4 lg:px-[70px] border-x online-support-content2">
+            <h3 className="font-[600]  text-xl lg:text-[40px] text-white">
+              100+
+            </h3>
             <p className="font-[400] text-[20px] text-white">Doctor Online</p>
           </div>
-          <div className="px-[70px] online-support-content3">
-            <h3 className="font-[600] text-[40px] text-white">1M+</h3>
+          <div className="px-4 lg:px-[70px] online-support-content3">
+            <h3 className="font-[600]   text-xl lg:text-[40px] text-white">
+              1M+
+            </h3>
             <p className="font-[400] text-[20px] text-white">Customer Active</p>
           </div>
         </div>
