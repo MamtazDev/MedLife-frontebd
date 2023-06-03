@@ -5,7 +5,7 @@ import { Link } from "react-router-dom";
 
 const Header = () => {
   return (
-    <section className="w-full bg-[#E5F4FC]">
+    <section className="w-full bg-[#E5F4FC] pb-5">
       <div className="navbar  container mx-auto pt-[50px]">
         <div className="flex-1">
           <Link

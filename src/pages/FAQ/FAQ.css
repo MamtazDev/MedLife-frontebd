@@ -1,3 +1,5 @@
 .faqDoctorImg {
-  background-image: url("../../assets/images/blue_square.png");
+  background-image: url("../../assets/images/leftSquare.png");
+  background-repeat: no-repeat;
+  padding-bottom: 40px;
 }

@@ -30,11 +30,11 @@ const FAQ = () => {
         </div>
       </div> */}
 
-      <div className="flex mt-[70px]">
-        <div className="w-2/5 faqDoctorImg">
+      <div className="flex flex-col lg:flex-row mt-[70px]">
+        <div className="w-2/5 faqDoctorImg hidden lg:block">
           <img src={faqDoctor} alt="" />
         </div>
-        <div className="w-3/5">
+        <div className="w-full lg:w-3/5">
           <div className="collapse collapse-plus bg-base-200 bg-inherit border-b border-[#D9DBE9]">
             <input type="checkbox" />
             <div className="collapse-title  font-[500] text-[20px] text-[#20226A] ">

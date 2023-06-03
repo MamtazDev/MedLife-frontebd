@@ -60,7 +60,7 @@ const Banner = () => {
 
       {/* online support start */}
       <div className="bg-[#1379B1] online-support">
-        <div className="container mx-auto flex py-[40px] online-support-container">
+        <div className="container mx-auto flex flex-col md:flex-row py-[40px] online-support-container">
           <div className="px-4 lg:px-[70px]  online-support-content1">
             <h3 className="font-[600] text-xl lg:text-[40px] text-white">
               24/7
