@@ -19,9 +19,12 @@ const Header = () => {
         <div className="flex-none hidden lg:block">
           <ul className="menu menu-horizontal px-1 flex gap-[2rem]">
             <li className="navitem">
-              <a className="font-[500] text-[20px] text-[#20226A] hover:bg-inherit hover:text-[#00b3ad]">
+              <Link
+                to="/"
+                className="font-[500] text-[20px] text-[#20226A] hover:bg-inherit hover:text-[#00b3ad]"
+              >
                 Home
-              </a>
+              </Link>
             </li>
             <li className=" navitem">
               <a className="hover:bg-inherit font-[500] text-[20px] text-[#20226A] hover:text-[#00b3ad]">
@@ -37,6 +40,14 @@ const Header = () => {
               <a className="hover:bg-inherit font-[500] text-[20px] text-[#20226A] hover:text-[#00b3ad]">
                 Contact
               </a>
+            </li>
+            <li className=" navitem">
+              <Link
+                to="/appointment"
+                className="hover:bg-inherit font-[500] text-[20px] text-[#20226A] hover:text-[#00b3ad]"
+              >
+                Appointment
+              </Link>
             </li>
             <li>
               <Link

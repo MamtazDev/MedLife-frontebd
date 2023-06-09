@@ -46,7 +46,7 @@ const Team = () => {
 
       <div className="grid grid-cols-1 md:grid-cols-2 lg:grid-cols-3 gap-[20px]">
         {doctors.map((item, idx) => (
-          <Link to={`/doctor/${item?.name}`}>
+          <Link to={`/doctor/${idx}`}>
             <DoctorCard item={item} />
           </Link>
         ))}

@@ -7,6 +7,8 @@ import AllServices from "../pages/AllServices/AllServices";
 import SingleService from "../pages/AllServices/SingleService";
 import DoctorProfile from "../pages/Doctor/DoctorProfile";
 import Doctor from "../pages/Doctor/Doctor";
+import MainAppointment from "../pages/MainAppointment/MainAppointment";
+
 
 export const router = createBrowserRouter([
   {
@@ -28,6 +30,10 @@ export const router = createBrowserRouter([
       {
         path: "/services",
         element: <AllServices />,
+      },
+      {
+        path: "/appointment",
+        element: <MainAppointment />,
       },
       {
         path: "/services/:id",

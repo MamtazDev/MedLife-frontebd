@@ -10,6 +10,7 @@ import Appoinment from "./pages/Appoinment/Appoinment";
 import Footer from "./pages/Footer/Footer";
 import { RouterProvider } from "react-router-dom";
 import { router } from "./Routes/Routes";
+import "react-day-picker/dist/style.css";
 
 function App() {
   const [count, setCount] = useState(0);
