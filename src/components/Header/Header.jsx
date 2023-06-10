@@ -1,9 +1,11 @@
-import React from "react";
+import React, { useState } from "react";
 import logo from "./../../assets/logo.png";
 import "./Header.css";
 import { Link } from "react-router-dom";
+import { HiMenu, HiX } from "react-icons/hi";
 
 const Header = () => {
+  const [menuBar, setMenuBar] = useState(false);
   return (
     <section className="w-full bg-[#E5F4FC] pb-5">
       <div className="navbar  container mx-auto pt-[50px]">
@@ -60,7 +62,46 @@ const Header = () => {
             </li>
           </ul>
         </div>
+        <div className="lg:hidden">
+          <HiMenu className="text-3xl" onClick={() => setMenuBar(true)} />
+        </div>
       </div>
+
+      <section className={`mobile__menu ${menuBar && "open"}`}>
+        <div className="flex justify-end">
+          <div>
+            <HiX className="text-3xl" onClick={() => setMenuBar(false)} />
+          </div>
+        </div>
+        <ul>
+          <li>
+            <a href="#"> Home</a>
+          </li>
+          <li>
+            <a href="#">Service</a>
+          </li>
+          <li>
+            <a href="#">About Us</a>
+          </li>
+          <li class="">
+            <a href="#">Contact</a>
+          </li>
+          <li className=" navitem">
+            <a className="hover:bg-inherit font-[500] text-[20px] text-[#20226A] hover:text-[#00b3ad]">
+              Contact
+            </a>
+          </li>
+          <li>
+            <Link
+              to="/login"
+              className="
+             bg-[#00B3AD] px-[40px] py-[14px] font-[500] text-[20px] text-white read-more-btn hover:bg-[#03928d]"
+            >
+              Login
+            </Link>
+          </li>
+        </ul>
+      </section>
     </section>
   );
 };

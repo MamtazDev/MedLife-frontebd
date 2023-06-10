@@ -29,3 +29,34 @@
 .navitem:hover::after {
   transform: scale(1, 1);
 }
+
+.mobile__menu {
+  position: absolute;
+  top: 0;
+  left: 0;
+  background-color: #f7f7f7;
+  padding: 40px;
+  width: 0;
+  opacity: 0;
+  overflow: hidden;
+  height: 100vh;
+  /* transform: scaleX(0);
+  transform-origin: left; */
+  transition: 0.5s ease-in-out;
+}
+
+.open {
+  width: 100%;
+  opacity: 1;
+  z-index: 999;
+}
+
+.mobile__menu ul li {
+  margin-bottom: 20px;
+}
+
+.mobile__menu ul li a {
+  font-size: 26px;
+  font-weight: 600;
+  color: #333;
+}
