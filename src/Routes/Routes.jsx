@@ -8,7 +8,7 @@ import SingleService from "../pages/AllServices/SingleService";
 import DoctorProfile from "../pages/Doctor/DoctorProfile";
 import Doctor from "../pages/Doctor/Doctor";
 import MainAppointment from "../pages/MainAppointment/MainAppointment";
-
+import MyProfile from "../pages/MyProfile/MyProfile";
 
 export const router = createBrowserRouter([
   {
@@ -46,6 +46,10 @@ export const router = createBrowserRouter([
       {
         path: "/doctor/:id",
         element: <DoctorProfile />,
+      },
+      {
+        path: "/profile",
+        element: <MyProfile />,
       },
     ],
   },

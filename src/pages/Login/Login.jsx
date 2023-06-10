@@ -15,7 +15,10 @@ const Login = () => {
       password,
     };
 
-    console.log(data, "data");
+    const user = JSON.stringify(data);
+
+    sessionStorage.setItem("medLifeUser", user);
+    window.location.reload(true);
     navigate("/");
   };
   return (

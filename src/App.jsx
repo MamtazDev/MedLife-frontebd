@@ -13,8 +13,6 @@ import { router } from "./Routes/Routes";
 import "react-day-picker/dist/style.css";
 
 function App() {
-  const [count, setCount] = useState(0);
-
   return (
     <>
       <RouterProvider router={router}></RouterProvider>

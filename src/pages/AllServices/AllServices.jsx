@@ -88,7 +88,7 @@ const specialist = [
 
 const AllServices = () => {
   return (
-    <section>
+    <section className="container mx-auto my-[100px]">
       <div className="grid grid-cols-1 md:grid-cols-2 lg:grid-cols-4 gap-[30px]">
         {specialist.map((item, idx) => (
           <Link to={`/services/${item?.title}`}>

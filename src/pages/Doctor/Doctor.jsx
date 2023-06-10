@@ -31,7 +31,7 @@ const doctors = [
 
 const Doctor = () => {
   return (
-    <section>
+    <section className="container mx-auto my-[100px]">
       <div className="grid grid-cols-1 md:grid-cols-2 lg:grid-cols-3 gap-[20px]">
         {doctors.map((item, idx) => (
           <Link to={`/doctor/${item?.name}`}>

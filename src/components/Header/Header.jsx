@@ -1,11 +1,21 @@
-import React, { useState } from "react";
+import React, { useEffect, useState } from "react";
 import logo from "./../../assets/logo.png";
 import "./Header.css";
 import { Link } from "react-router-dom";
 import { HiMenu, HiX } from "react-icons/hi";
+import { FaUserAlt } from "react-icons/fa";
 
 const Header = () => {
   const [menuBar, setMenuBar] = useState(false);
+
+  const [user, setUser] = useState(null);
+
+  useEffect(() => {
+    const data = sessionStorage.getItem("medLifeUser");
+    if (data) {
+      setUser(JSON.parse(data));
+    }
+  }, [user]);
   return (
     <section className="w-full bg-[#E5F4FC] pb-5">
       <div className="navbar  container mx-auto pt-[50px]">
@@ -52,13 +62,19 @@ const Header = () => {
               </Link>
             </li>
             <li>
-              <Link
-                to="/login"
-                className="
+              {user ? (
+                <Link to="/profile">
+                  <FaUserAlt className=" text-[20px] text-[#20226A]" />
+                </Link>
+              ) : (
+                <Link
+                  to="/login"
+                  className="
              bg-[#00B3AD] px-[40px] py-[14px] font-[500] text-[20px] text-white read-more-btn hover:bg-[#03928d]"
-              >
-                Login
-              </Link>
+                >
+                  Login
+                </Link>
+              )}
             </li>
           </ul>
         </div>
