@@ -15,7 +15,7 @@ const Header = () => {
     if (data) {
       setUser(JSON.parse(data));
     }
-  }, [user]);
+  }, []);
   return (
     <section className="w-full bg-[#E5F4FC] pb-5">
       <div className="navbar  container mx-auto pt-[50px]">
