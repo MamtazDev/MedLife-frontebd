@@ -31,7 +31,15 @@ const AppointmentModal = ({ showModal, setShowModal, name }) => {
       />
       <div className="modal">
         <div className="modal-box">
-          <h3 className="text-lg font-bold">{name}</h3>
+          <div>
+            <h3 className="text-lg font-bold">{name}</h3>
+            <button
+              onClick={() => setShowModal(false)}
+              className="btn btn-sm btn-circle btn-ghost absolute right-2 top-2"
+            >
+              ✕
+            </button>
+          </div>
           <form
             className="grid grid-cols-1 gap-3 mt-10"
             onSubmit={handleSubmit}

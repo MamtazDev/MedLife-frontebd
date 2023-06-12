@@ -34,7 +34,7 @@ const Team = () => {
   return (
     <section className="container custom-container mx-auto text-center mb-[150px]">
       <p className="font-[500] text-[20px] text-[#00B3AD]">Our Team</p>
-      <h4 className="mb-[70px] font-[600] text-[40px] text-[#20226A]">
+      <h4 className="mb-[70px] font-[600] text-[25px] md:text-[30px] lg:text-[40px] text-[#20226A]">
         Meet Our Consultants & Medical Specialists
       </h4>
       <p className="font-[400] text-[16px] text-[#00B3AD] text-end mb-[30px] cursor-pointer">
@@ -44,7 +44,7 @@ const Team = () => {
         </Link>
       </p>
 
-      <div className="grid grid-cols-1 md:grid-cols-2 lg:grid-cols-3 gap-[20px]">
+      <div className="grid grid-cols-1 md:grid-cols-2 lg:grid-cols-3 gap-[20px] p-5 lg:p-0">
         {doctors.map((item, idx) => (
           <Link to={`/doctor/${idx}`}>
             <DoctorCard item={item} />

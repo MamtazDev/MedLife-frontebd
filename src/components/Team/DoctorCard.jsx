@@ -34,11 +34,27 @@ const DoctorCard = ({ item }) => {
         </p>
       </div>
       <div className="flex justify-center pb-[38px]">
-        <div className="flex gap-[20px]">
-          <img src={twitter} alt="" className="w-[16px] h-[13px]" />
-          <img src={facebook} alt="" className="w-[16px] h-[13px]" />
-          <img src={linkedin} alt="" className="w-[16px] h-[13px]" />
-          <img src={mail} alt="" className="w-[16px] h-[13px]" />
+        <div className="flex gap-[20px] items-center">
+          <img
+            src={twitter}
+            alt=""
+            className="w-[16px] h-[16px] object-contain hover:scale-150 transition-all"
+          />
+          <img
+            src={facebook}
+            alt=""
+            className="w-[16px] h-[16px] object-contain hover:scale-150 transition-all"
+          />
+          <img
+            src={linkedin}
+            alt=""
+            className="w-[16px] h-[16px] object-contain hover:scale-150 transition-all"
+          />
+          <img
+            src={mail}
+            alt=""
+            className="w-[16px] h-[16px] object-contain hover:scale-150 transition-all"
+          />
         </div>
       </div>
     </div>

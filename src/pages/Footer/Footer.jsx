@@ -15,7 +15,7 @@ const Footer = () => {
       <div className="footer_bg">
         <div className="container custom-container mx-auto pt-[132px] pb-[109px]">
           <div className="flex flex-col lg:flex-row items-center gap-5 lg:gap-0 lg:justify-between">
-            <div className="flex gap-[20px] items-center">
+            <div className="flex gap-[20px] items-center p-5 lg:p-0">
               <img src={mail} alt="" />
               <p className="font-[600] text-[20px] text-white items-center">
                 Subscribe to get latest news

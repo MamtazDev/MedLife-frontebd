@@ -16,7 +16,7 @@ const FAQ = () => {
   return (
     <section className="container mx-auto ">
       <h6 className="text-center font-[500] text-[20px] text-[#00B3AD]">FAQ</h6>
-      <h3 className="text-center font-[600] text-[40px] text-[#20226A]">
+      <h3 className="text-center font-[600] text-[25px] md:text-[30px] lg:text-[40px] text-[#20226A]">
         Frequently Asked Questions
       </h3>
 

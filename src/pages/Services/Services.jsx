@@ -65,9 +65,12 @@ const specialist = [
 
 const Services = () => {
   return (
-    <section className="container custom-container mx-auto mt-[146px] mb-[150px] px-[20px] lg:px-0">
+    <section
+      id="service"
+      className="container custom-container mx-auto mt-[146px] mb-[150px] px-[20px] lg:px-0"
+    >
       <h4 className="font-[500] text-[#00B3AD] text-[20px]">Our Services</h4>
-      <h3 className="mb-[70px] font-[600] text-[#20226A] text-[40px]">
+      <h3 className="mb-[70px] font-[600] text-[#20226A] text-[25px] md:text-[30px] lg:text-[40px]">
         Our Consulting Specialist
       </h3>
       <p className="font-[400] text-[16px] text-[#00B3AD] text-end mb-[30px] cursor-pointer">

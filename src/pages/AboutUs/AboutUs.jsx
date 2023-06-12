@@ -6,7 +6,10 @@ import "./AboutUs.css";
 
 const AboutUs = () => {
   return (
-    <section className="container custom-container  mx-auto mb-[150px]">
+    <section
+      id="aboutus"
+      className="container custom-container  mx-auto mb-[150px]"
+    >
       <div className="flex flex-col lg:flex-row aboutus_container mb-[35px]">
         <div className="w-full lg:w-1/2 flex justify-center items-center h-[455px] video-frame">
           <img src={videoFrame} alt="" className="w-[600px] h-[384px]" />
@@ -14,7 +17,9 @@ const AboutUs = () => {
         <div className="w-full lg:w-1/2 px-[20px] lg:px-0 flex justify-center items-center h-[455px]">
           <div>
             <p className="font-[500] text-[20px] text-[#00B3AD]">About Us</p>
-            <h3 className="font-[600] text-[40px] text-[#20226A]">Our Story</h3>
+            <h3 className="font-[600] text-[25px] md:text-[30px] lg:text-[40px] text-[#20226A]">
+              Our Story
+            </h3>
             <p className="font-[500] text-[20px] text-[#656765] mb-[20px]">
               A great place to receive care
             </p>

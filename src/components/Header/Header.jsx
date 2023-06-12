@@ -39,12 +39,18 @@ const Header = () => {
               </Link>
             </li>
             <li className=" navitem">
-              <a className="hover:bg-inherit font-[500] text-[20px] text-[#20226A] hover:text-[#00b3ad]">
+              <a
+                className="hover:bg-inherit font-[500] text-[20px] text-[#20226A] hover:text-[#00b3ad]"
+                href="#service"
+              >
                 Service
               </a>
             </li>
             <li className="navitem">
-              <a className="hover:bg-inherit font-[500] text-[20px] text-[#20226A] hover:text-[#00b3ad]">
+              <a
+                className="hover:bg-inherit font-[500] text-[20px] text-[#20226A] hover:text-[#00b3ad]"
+                href="#aboutus"
+              >
                 About Us
               </a>
             </li>

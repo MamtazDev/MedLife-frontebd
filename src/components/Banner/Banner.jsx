@@ -13,7 +13,7 @@ const Banner = () => {
     <section className="banner relative">
       <div className="container mx-auto mb-[131px] pt-5 custom-container px-[25px] lg:px-0">
         <div className="max-w-[756px]">
-          <h1 className="mt-[138px] font-[600] text-[64px] text-[#20226A]">
+          <h1 className="mt-[10px] lg:mt-[138px] font-[600] text-[34px] lg:text-[64px] text-[#20226A]">
             <span>Find And Search</span> <br />
             <span>
               Your <span className="text-[#1379B1]">Favorite Doctor's</span>
@@ -25,7 +25,7 @@ const Banner = () => {
             dictum in sed arcu .
           </p>
 
-          <div className="flex flex-col lg:flex-row mt-[60px] p-[11px] bg-white rounded-[8px] max-w-[550px] justify-between items-center">
+          <div className="flex flex-col md:flex-row mt-[60px] p-[11px] bg-white rounded-[8px] max-w-[550px] justify-between items-center">
             {/* find doctor */}
             <div className="flex gap-[5px] items-center ml-[30px]">
               <img src={doctor} alt="" className="w-[24px] h-[24px]" />
